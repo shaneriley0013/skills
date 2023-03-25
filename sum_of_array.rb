@@ -88,16 +88,14 @@ class Geometric
       y[i] = Math.log(x[i])
       tmp = tmp+y[i]
     end
-    avg_log=tmp/x.length
-    gm=Math.exp(avg_log)
+    avg_log = tmp/x.length
+    gm = Math.exp(avg_log)
     puts "Geometric mean is: #{gm.to_s}"
   end
 
 end
 
-
-x=Array.[](5,2,6,1)
-
+x = Array.[](5,2,6,1)
 Geometric.new.mean_calculate(x)
 
 
