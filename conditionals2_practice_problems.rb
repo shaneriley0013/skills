@@ -126,3 +126,15 @@
 # end
 # puts number_1
 # puts number_2
+
+
+# 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
+# puts puts 
+# number = rand(-10..10)
+# if number < 0
+#   puts "1776"
+# else
+#   puts "1979"
+# end
+# puts "=============="
+# puts number
