@@ -115,3 +115,14 @@
 
 # 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
 
+# number_1 = rand(0..13)
+# number_2 = rand(0..13)
+
+
+# if number_1 > 10 || number_2 > 10
+#   puts "100"
+# else
+#   puts "-100"
+# end
+# puts number_1
+# puts number_2
