@@ -155,3 +155,17 @@
 # puts "=============="
 # puts number
 
+
+# 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
+# puts 
+# number_1 = rand(-1..1)
+# number_2 = rand(-1..1)
+
+# if number_1 < 0 && number_2 > 0
+#   puts "1"
+# else
+#   puts "0"
+# end
+
+# puts "#{number_1} was number_1"
+# puts "#{number_2} was number_2"
