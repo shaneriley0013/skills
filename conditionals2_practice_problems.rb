@@ -138,3 +138,20 @@
 # end
 # puts "=============="
 # puts number
+
+
+# 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
+
+# puts puts 
+# number = rand(98..101)
+# if number == 100
+#   puts "100"
+# elsif number == 99
+#   puts "99"
+# else
+#   puts "0"
+# end
+
+# puts "=============="
+# puts number
+
