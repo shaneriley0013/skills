@@ -75,7 +75,7 @@
 # p numbers.geometric
 
 
-#######This is the program to calculate geometric mean of a sequence.
+#######This is the program(copied from web) to calculate geometric mean of a sequence.
 
 #The sequence will be passed as an array as argument to the function
 
