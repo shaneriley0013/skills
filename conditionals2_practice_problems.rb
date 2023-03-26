@@ -95,3 +95,23 @@
 # elsif number < 9000
 #   puts "-1" 
 # end
+
+
+# 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
+
+# number = rand(0..40)
+# if number < 10
+#   puts "9"
+# elsif number.between?(11, 20)
+#   puts "19"
+# elsif number.between?(21, 29)
+#   puts "29"
+# else
+#   puts "-1"
+# end
+# puts number
+
+
+
+# 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
+
