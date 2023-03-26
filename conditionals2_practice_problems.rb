@@ -169,3 +169,25 @@
 
 # puts "#{number_1} was number_1"
 # puts "#{number_2} was number_2"
+
+
+# 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+
+number = rand(19..81)
+
+if number > 80
+  puts "5"
+elsif number.between?(60, 79)
+  puts "4"
+elsif number.between?(40, 59)
+  puts "3"
+elsif number.between?(20, 39)
+  puts "2"
+else
+  puts "1"
+  
+end
+
+
+puts "=============="
+puts "#{number} was the random number"
