@@ -85,6 +85,9 @@ puts "==============="
 #   end
 # end
 
+#=============================================================================#
+
+
 # 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
 
@@ -92,3 +95,17 @@ puts "==============="
 # book_author = "Anton Szandor LaVey"
 
 # puts "The title of you book is: " + book_title + ", and the author is: " + book_author  + "."
+
+#=============================================================================#
+
+
+# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+# book_title = "The Satanic Bible"
+# book_author = "Anton Szandor LaVey"
+
+# puts "The title of you book is: #{book_title}, and the author is: #{book_author}."
+
+#=============================================================================#
+
+
