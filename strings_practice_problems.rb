@@ -36,3 +36,10 @@ puts "==============="
 # end
 
 # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+# color_1 = "dark-green"
+# color_2 = "black"
+# color_3 = "gold"
+
+# puts "My favorite colors are " + color_1 + ", " + color_2 + ", " + "and " + color_3 + "."
+
