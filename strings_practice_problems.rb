@@ -26,11 +26,13 @@ puts "==============="
 #   puts "polo"
 # end
 
-word = " "                       ### this is how you loop until you get the right answer!!!!
-until word == "marco"
-  puts "Please enter a word."
-  word = gets.chomp.downcase
-end
-if word == "marco"
-  puts "polo"
-end
+# word = " "                       ### this is how you loop until you get the right answer!!!!
+# until word == "marco"
+#   puts "Please enter a word."
+#   word = gets.chomp.downcase
+# end
+# if word == "marco"
+#   puts "polo"
+# end
+
+# 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
