@@ -72,7 +72,16 @@ puts "==============="
 # else
 #   puts "You're not Satan!."
 # end
+#---------------with != instead-------------#
 
+# puts "What is your name?"
+# name = gets.chomp
+# if name != "Santa"
+#   puts "You're not Santa."
+# end
+
+
+#---------------attempt at loop until word is entered-------------#
 # word = ""
 # until word == "satan"
 #   puts "Please enter a name."   ### This isn't working properly(asks for input twice)???
@@ -110,16 +119,25 @@ puts "==============="
 
 # 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
-puts "Please enter your password:"
-puts "=================="
-password = gets.chomp
-puts "=================="
+# puts "Please enter your password:"
+# puts "=================="
+# password = gets.chomp
+# puts "=================="
 
-if password == "Joshua"
-  puts "Shall we play a game?"
-  puts "=================="
-else
-  puts "Access denied"
-  puts "=================="
-end
+# if password == "Joshua"
+#   puts "Shall we play a game?"
+#   puts "=================="
+# else
+#   puts "Access denied"
+#   puts "=================="
+# end
 
+#=============================================================================#
+
+# 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+# city_1 = "San Diego"
+# city_2 = "Phoenix"
+# city_3 = "Tucson"
+
+# puts "The cities I would like to live in most are #{city_1}, #{city_2}, and #{city_3}."
