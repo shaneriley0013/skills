@@ -64,8 +64,8 @@ puts "==============="
 
 # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-puts "Please enter a name:"
-word = gets.chomp.downcase
+# puts "Please enter a name:"
+# word = gets.chomp.downcase
 
 # if word == "satan"
 #   puts "HELL-O SATAN!"
@@ -84,3 +84,11 @@ word = gets.chomp.downcase
 #     puts "You're not Satan!."
 #   end
 # end
+
+# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+
+# book_title = "The Satanic Bible"
+# book_author = "Anton Szandor LaVey"
+
+# puts "The title of you book is: " + book_title + ", and the author is: " + book_author  + "."
