@@ -108,4 +108,18 @@ puts "==============="
 
 #=============================================================================#
 
+# 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+puts "Please enter your password:"
+puts "=================="
+password = gets.chomp
+puts "=================="
+
+if password == "Joshua"
+  puts "Shall we play a game?"
+  puts "=================="
+else
+  puts "Access denied"
+  puts "=================="
+end
 
