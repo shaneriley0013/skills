@@ -57,3 +57,30 @@ puts "==============="
 # color_3 = "gold"
 
 # puts "My favorite colors are #{color_1}, #{color_2}, and #{color_3}."
+
+
+#=============================================================================#
+
+
+# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+puts "Please enter a name:"
+word = gets.chomp.downcase
+
+# if word == "satan"
+#   puts "HELL-O SATAN!"
+# else
+#   puts "You're not Satan!."
+# end
+
+# word = ""
+# until word == "satan"
+#   puts "Please enter a name."   ### This isn't working properly(asks for input twice)???
+#   word = gets.chomp.downcase
+#   puts "======"
+#   if word == "satan"
+#     puts "HELLO SATAN!"
+#   elsif word != "satan"
+#     puts "You're not Satan!."
+#   end
+# end
