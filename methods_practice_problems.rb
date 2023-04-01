@@ -63,18 +63,46 @@
 
 # 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
-puts "Please enter a number:"
-number = gets.chomp.to_i
-product = number * 10
-puts product
+# puts "Please enter a number:"
+# number = gets.chomp.to_i
+# product = number * 10
+# puts product
 
 
 
 ##==========================================================##
+
+
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+
+puts "Please enter a word:"
+word1 = gets.chomp.upcase
+
+puts "Please enter another word:"
+word2 = gets.chomp.upcase
+
+puts "Here are your 2 words in all caps: #{word1} and #{word2}."
+
+############## OR THESE ALL IN ONE LINE ###################
+
+# puts "Please enter two words:"
+# word_1, word_2 = gets.split.map(&:upcase)
+# puts "#{word_1} and #{word_2}"
+
+# puts "Please enter two numbers:"
+# num_1, num_2 = gets.split.map( &:to_i )
+# puts "You entered #{num_1} and #{num_2}"
+# sum = num_1 + num_2
+# puts "The sum of the two numbers is #{sum}."
+
+
+
 
 ##==========================================================##
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+
+
 
 ##==========================================================##
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
