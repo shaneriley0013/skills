@@ -75,13 +75,13 @@
 
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
-puts "Please enter a word:"
-word1 = gets.chomp.upcase
+# puts "Please enter a word:"
+# word1 = gets.chomp.upcase
 
-puts "Please enter another word:"
-word2 = gets.chomp.upcase
+# puts "Please enter another word:"
+# word2 = gets.chomp.upcase
 
-puts "Here are your 2 words in all caps: #{word1} and #{word2}."
+# puts "Here are your 2 words in all caps: #{word1} and #{word2}."
 
 ############## OR THESE ALL IN ONE LINE ###################
 
@@ -100,6 +100,10 @@ puts "Here are your 2 words in all caps: #{word1} and #{word2}."
 
 ##==========================================================##
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+puts "Please enter a word:"
+word_length = gets.chomp.length
+p "The number of letters in your word is: #{word_length}"
 
 
 
