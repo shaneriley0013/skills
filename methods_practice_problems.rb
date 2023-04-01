@@ -101,18 +101,37 @@
 ##==========================================================##
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
-puts "Please enter a word:"
-word_length = gets.chomp.length
-p "The number of letters in your word is: #{word_length}"
-
-
+# puts "Please enter a word:"
+# word_length = gets.chomp.length
+# p "The number of letters in your word is: #{word_length}"
 
 
 ##==========================================================##
+
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+# puts "Please enter a number:"
+# number = gets.to_i
+# if number < 0
+#   puts "That's a negative number"
+# end
+
+# puts "Please enter a number:"
+# number = gets.to_i
+# if number < 0
+#   puts "That's a negative number"
+# else
+#   puts "That's not a negitive number"
+# end
+
+
 
 ##==========================================================##
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+
+
+
+
 
 ##==========================================================##
 # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
