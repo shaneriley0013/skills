@@ -129,6 +129,18 @@
 ##==========================================================##
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
+# puts "Please enter two numbers:"
+# number1, number2 = gets.split.map(&:to_i)
+# product = number1 * number2
+
+# p product
+
+# puts "Please enter a number:"
+# number1 = gets.chomp.to_i
+# puts "Please enter another number:"
+# number2 = gets.chomp.to_i
+# product = number1 * number2
+# puts "The product of those two numbers is: #{product}"
 
 
 
