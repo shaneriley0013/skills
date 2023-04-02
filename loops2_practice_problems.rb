@@ -4,7 +4,7 @@
 # 1. Write a while loop to print the numbers 1 through 10.
 
 # number = 1
-# while number < 11
+# while number <= 10
 #   puts number
 #   number += 1
 # end
@@ -16,20 +16,20 @@
 # 2. Write a while loop that prints the word "hello" 5 times.
 
 
-# index = 0
-# while index < 5
+# i = 0
+# while i < 5
 #   puts "HELL-o"
-#   index += 1
+#   i += 1
 # end
 
 #------------------------ OR MORE FUN WITH NESTED IF LOOP -----------------------#
 
 # word = "HELL-o"
-# index = 0
-# while index < 5
+# i = 0
+# while i < 5
 #   puts word
-#   index += 1
-#   if index == 5
+#   i += 1
+#   if i == 5
 #     puts "BEELZEBUB!"
 #   end
 # end
@@ -45,6 +45,16 @@
 # while word != "stop"
 #   puts "Enter a word:"
 #   word = gets.chomp
+# end
+
+#---------------- OR THIS WAY WITH "TRUE" STATEMENT ------#
+
+# while true
+#   puts "Enter a word: "
+#   input = gets.chomp
+#   if input == "stop"
+#     break
+#   end
 # end
 
 
@@ -66,6 +76,14 @@
 ###=================================================================================###
 
 # 5. Write a while loop that prints the number 9000 ten times.
+
+# i = 0
+# while i < 10
+#   puts 9000
+#   i += 1
+# end
+
+#--------------- TIMES VERSION EXAMPLES ----------------#
 
 # 10.times do
 #   puts "the number 9000"
@@ -102,6 +120,17 @@
 # puts "that number was big enough!"
 
 
+#---------------- OR THIS WAY WITH "TRUE" STATEMENT -------------#
+
+# while true
+#   puts "Enter a number: "
+#   input = gets.chomp
+#   if input.to_i > 10
+#     break
+#   end
+# end
+
+
 
 ###=================================================================================###
 
@@ -120,6 +149,16 @@
 ###=================================================================================###
 
 # 8. Write a while loop that prints the phrase "Around the world" 144 times.
+
+# i = 0
+# while i <= 144
+#   puts "Around the world"
+#   i += 1
+# end
+
+
+#--------------- TIMES VERSION EXAMPLES ----------------#
+
 
 # 144.times do
 #   puts "Around the world"
@@ -146,13 +185,28 @@
 # puts "That word was long enough!"
 
 
+#---------------- OR THIS WAY WITH "TRUE" STATEMENT -------------#
+
+
+# while true
+#   puts "Enter a word: "
+#   input = gets.chomp
+#   if input.length > 5
+#     break
+#   end
+# end
+
 
 
 ###=================================================================================###
 
 # 10. Write a while loop that prints the even numbers from 2 to 40.
 
-
+# number = 2
+# while number <= 40
+#   puts number
+#   number += 2
+# end
 
 
 
