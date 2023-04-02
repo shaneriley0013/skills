@@ -96,9 +96,9 @@
 
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
-words = ["FUCK", "SHIT"]
-words << "UP!!"
-p words
+# words = ["FUCK", "SHIT"]
+# words << "UP!!"
+# p words
 
 
 
@@ -108,10 +108,17 @@ p words
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+numbers = [66, 6, 666, 13, 420]
+p numbers
+numbers[0] = numbers[0] * 10
+p numbers
 
+#---------------------- OR DRY SYNTAX ----------------------------####
 
-
-
+# numbers = [66, 6, 666, 13, 420]
+# p numbers
+# numbers[0] *= 10
+# p numbers
 
 ##==============================================================================####
 
