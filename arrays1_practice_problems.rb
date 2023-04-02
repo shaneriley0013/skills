@@ -152,10 +152,17 @@
 
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
+# countries = ["Burundi", "Somalia", "Mozambique" ]
+# p countries
+# countries << "Madagascar"
+# p countries
 
+#------------------------ OR WITH += --------------------------###
 
-
-
+countries = ["Burundi", "Somalia", "Mozambique" ]
+p countries
+countries += ["Madagascar", "Syria", "Hati"]
+p countries
 
 
 
