@@ -67,10 +67,10 @@
 
 # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
-names = ["Larry", "Moe", "Curly"]
-p names
-names[2] = names[2].upcase
-p names
+# names = ["Larry", "Moe", "Curly"]
+# p names
+# names[2] = names[2].upcase
+# p names
 
 
 
@@ -79,6 +79,13 @@ p names
 ##==============================================================================####
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+# stooges = ["Larry", "Moe", "Curly"]
+# i = 0
+# while i < stooges.length
+#   puts stooges[i]
+#   i += 1
+# end
 
 
 
