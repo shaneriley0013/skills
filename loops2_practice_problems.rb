@@ -52,11 +52,13 @@
 ###=================================================================================###
 
 # 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
-number = 0
-while number < 101
-  puts number
-  number += 5
-end
+
+
+# number = 0
+# while number < 101
+#   puts number
+#   number += 5
+# end
 
 
 
@@ -64,6 +66,10 @@ end
 ###=================================================================================###
 
 # 5. Write a while loop that prints the number 9000 ten times.
+
+# 10.times do
+#   puts "the number 9000"
+# end
 
 
 
@@ -73,6 +79,13 @@ end
 
 # 6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
 
+# puts "Enter a number:"
+# number = gets.chomp.to_i
+# while number < 10
+#   puts "Enter a number:"
+#   number = gets.chomp.to_i
+# end
+# puts "that number was big enough!"
 
 
 
