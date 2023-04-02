@@ -34,20 +34,32 @@
 
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-numbers = [0, 6, 6, 6, 0]
-i = 0
-while i < numbers.length
-  puts numbers[i]
-  i += 1
-end
-
-
+# numbers = [0, 6, 6, 6, 0]
+# i = 0
+# while i < numbers.length
+#   puts numbers[i]
+#   i += 1
+# end
 
 
 ##==============================================================================####
 
 # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
+# numbers = [0]
+# p numbers
+# numbers << 6
+# numbers << 6
+# numbers << 6
+# p numbers
+
+#--------------------DRY SYNTAX USING += ON ONE LINE  ---------------####
+
+
+# numbers = [0]
+# p numbers
+# numbers += [6, 6, 6]
+# p numbers
 
 
 
