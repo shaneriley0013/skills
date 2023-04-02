@@ -139,13 +139,20 @@
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
 
-
+# numbers = [666, 999]
+# i = 0
+# while i < numbers.length
+#   puts numbers[i]
+#   i += 1
+# end
 
 
 
 ##==============================================================================####
 
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+
 
 
 
