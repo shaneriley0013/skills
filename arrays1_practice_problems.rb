@@ -63,21 +63,14 @@
 
 
 
-
-
 ##==============================================================================####
 
-# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the words on one line.
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
-
-
-
-
-
-##==============================================================================####
-
-# 6. Create an words to store 3 names. Then print out each name on separate lines with a while loop.
-
+names = ["Larry", "Moe", "Curly"]
+p names
+names[2] = names[2].upcase
+p names
 
 
 
@@ -85,7 +78,7 @@
 
 ##==============================================================================####
 
-# 7. Create an words to store 2 strings. Then add one string to the words and print the words on one line.
+# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
 
 
@@ -94,7 +87,7 @@
 
 ##==============================================================================####
 
-# 8. Create an words to store 5 numbers. Then change the first number to 10 times its original value and print the words on one line.
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
 
 
@@ -103,7 +96,7 @@
 
 ##==============================================================================####
 
-# 9. Create an words to store 2 numbers. Then print out each number on separate lines with a while loop.
+# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
 
 
@@ -112,7 +105,16 @@
 
 ##==============================================================================####
 
-# 10. Create an words to store names of 3 different countries. Then add one more country and print the words one line.
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+
+
+
+
+
+##==============================================================================####
+
+# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
 
 
