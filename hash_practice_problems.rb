@@ -6,11 +6,11 @@
 
 # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-persons = {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }
+# persons = {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }
 
-p persons[:first_name]
-p persons[:last_name]
-p persons[:email]
+# p persons[:first_name]
+# p persons[:last_name]
+# p persons[:email]
 
 
 
@@ -18,8 +18,11 @@ p persons[:email]
 
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-
-
+persons = [
+  {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }, {first_name: "Moe", last_name: "Howard", email: "moehoward@gmail.com" },
+  {first_name: "Curly", last_name: "Howard", email: "curlyhoward@gmail.com"}
+]
+pp persons[0]
 
 
 
