@@ -80,6 +80,8 @@
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+
+
 # stooges = ["Larry", "Moe", "Curly"]
 # i = 0
 # while i < stooges.length
@@ -90,12 +92,13 @@
 
 
 
-
-
 ##==============================================================================####
 
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
+words = ["FUCK", "SHIT"]
+words << "UP!!"
+p words
 
 
 
