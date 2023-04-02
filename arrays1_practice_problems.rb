@@ -108,10 +108,10 @@
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
-numbers = [66, 6, 666, 13, 420]
-p numbers
-numbers[0] = numbers[0] * 10
-p numbers
+# numbers = [66, 6, 666, 13, 420]
+# p numbers
+# numbers[0] = numbers[0] * 10
+# p numbers
 
 #---------------------- OR DRY SYNTAX ----------------------------####
 
@@ -119,6 +119,20 @@ p numbers
 # p numbers
 # numbers[0] *= 10
 # p numbers
+
+#---------------------- OR WHILE LOOP TO CHNGE THEM ALL ----------------------####
+
+# numbers = [66, 6, 666, 13, 420]
+# p numbers
+# i = 0
+# while i < numbers.length
+#   numbers[i] *= 10
+#   i += 1
+# end
+# p numbers
+
+
+
 
 ##==============================================================================####
 
