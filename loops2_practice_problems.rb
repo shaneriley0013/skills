@@ -71,8 +71,9 @@
 #   puts "the number 9000"
 # end
 
+#----------------OR CAN BE WRITTEN IN ONE LINE --------------------#
 
-
+# 10.times { puts "the number 9000" }
 
 
 ###=================================================================================###
@@ -120,13 +121,22 @@
 
 # 8. Write a while loop that prints the phrase "Around the world" 144 times.
 
+# 144.times do
+#   puts "Around the world"
+# end
 
+#------------------ OR IN ONE LINE. THIS IS THE PREFERRED WAY WITH SIMPLE CODE------#
+
+
+# 144.times { puts "Around the world" }
 
 
 
 ###=================================================================================###
 
 # 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+
 
 
 
