@@ -55,7 +55,7 @@
 
 
 # number = 0
-# while number < 101
+# while number <= 100
 #   puts number
 #   number += 5
 # end
@@ -88,11 +88,29 @@
 # puts "that number was big enough!"
 
 
+#---------------- OR BETTER DRY VERSION .to_i IN WHILE LOOP PARAMS ----------------------#
+
+
+
+# puts "Enter a number:"
+# number = gets.chomp
+# while number.to_i < 10
+#   puts "Enter a number:"
+#   number = gets.chomp
+# end
+# puts "that number was big enough!"
+
 
 
 ###=================================================================================###
 
 # 7. Write a while loop that prints the numbers 50 to 70.
+
+# number = 50
+# while number <= 70
+#   puts number
+#   number += 1
+# end
 
 
 
