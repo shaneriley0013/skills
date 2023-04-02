@@ -1,10 +1,16 @@
 
+#h = {foo: 0, bar: 1, baz: 2}
+#person = {name: 'Matz', language: 'Ruby'}
+
+
 
 # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
+persons = {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }
 
-
-
+p persons[:first_name]
+p persons[:last_name]
+p persons[:email]
 
 
 
