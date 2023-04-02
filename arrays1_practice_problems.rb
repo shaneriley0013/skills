@@ -120,7 +120,7 @@
 # numbers[0] *= 10
 # p numbers
 
-#---------------------- OR WHILE LOOP TO CHNGE THEM ALL ----------------------####
+#---------------------- OR WHILE LOOP TO CHNGE THEM ALL!!----------####
 
 # numbers = [66, 6, 666, 13, 420]
 # p numbers
