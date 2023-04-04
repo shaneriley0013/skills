@@ -77,7 +77,12 @@
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-
+# books = [ 
+#   {title: "The God Delusion", author: "Richard Dawkins"}, 
+#   {title: "Capital", author: "Karl Marx"},
+#   {title: "The Satanic Bible", author: "Anton Lavey"}
+# ]
+# pp books[2][:author]
 
 
 
