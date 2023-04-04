@@ -18,11 +18,12 @@
 
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-persons = [
-  {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }, {first_name: "Moe", last_name: "Howard", email: "moehoward@gmail.com" },
-  {first_name: "Curly", last_name: "Howard", email: "curlyhoward@gmail.com"}
-]
-pp persons[0]
+# stooges = [
+#   {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }, {first_name: "Moe", last_name: "Howard", email: "moehoward@gmail.com" },
+#   {first_name: "Curly", last_name: "Howard", email: "curlyhoward@gmail.com"}
+# ]
+# puts 
+# pp stooges[0]
 
 
 
@@ -31,8 +32,9 @@ pp persons[0]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
+items = { hambuger: 6.66, fries: 3.33, coke: 2.22}
 
-
+pp items
 
 
 
