@@ -32,10 +32,10 @@
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-items = { hamburger: 6.66, fries: 3.33, coke: 2.22}
+# items = { hamburger: 6.66, fries: 3.33, coke: 2.22}
 
-items[:hotdog] = 4.44
-pp items
+# items[:hotdog] = 4.44
+# pp items
 
 
 
@@ -44,7 +44,29 @@ pp items
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+# puts 
+# book1 = {
+#   title: "The God Delusion", 
+#   author: "Richard Dawkins", 
+#   page_count: 666, 
+#   language: "English"
+# }
+# puts book1[:title]
+# puts book1[:author]
+# puts book1[:page_count]
+# puts book1[:language]
 
+
+# #------------------ OR ON ONE LINE ---------------------------------##
+# puts 
+# book1 = {
+#   title: "The God Delusion", 
+#   author: "Richard Dawkins", 
+#   page_count: 666, 
+#   language: "English"
+# }
+
+# puts book1[:title], book1[:author], book1[:page_count], book1[:language]
 
 
 
