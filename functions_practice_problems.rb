@@ -48,8 +48,33 @@
 #====================================================================================#
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
+# def subtract( num1, num2 )
+#   num1 - num2  
+# end
+
+# puts subtract( 999, 333 )
+
+
+####------------ OR THE FLXIABLE WAY WITH TWO INPUTS SIMULTANIOUSLY -----##########
+
+# puts "Enter 2 numbers: "
+# num1, num2 = gets.split.map(&:to_i)
+# def subtract( num1, num2 )
+#   num1 - num2
+# end
+# puts
+# puts "After subtraction your remainder will be: #{subtract(num1, num2)}"
+
+  
+
 #====================================================================================#
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+
+
+
+
+
 
 #====================================================================================#
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
