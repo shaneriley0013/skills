@@ -144,6 +144,13 @@
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+# words = {
+#   cat: "A four legged fuzzball", 
+#   dog: "Man's best friend"
+# }
+
+# words[:fish] = "A delicious dinner"
+# pp words
 
 
 
