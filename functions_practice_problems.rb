@@ -92,6 +92,26 @@
 #====================================================================================#
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
+# def first_letter(string)
+#   string[0]
+# end
+# puts first_letter("satan")
+
+
+#-------- OR THE FLXIABLE WAY WITH ANY INPUT AND QUOTES INSIDE QUOTES-------##########
+
+# puts "Enter any word: "
+# word = gets.chomp
+
+# def first_letter(string)
+#   string[0]
+# end
+
+# puts " The first letter of your word is: \"#{first_letter(word)}\" "
+
+
+
+
 #====================================================================================#
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
