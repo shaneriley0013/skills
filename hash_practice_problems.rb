@@ -128,7 +128,13 @@
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
+# laptop = [ 
+#   { brand: "Mac", model: "MacBook Air" },
+#   { brand: "HP", model: "Model Whatever" },
+#   { brand: "Dell", model: "Model Whatever 2" }
+# ]
 
+# puts laptop[2][:model]
 
 
 
