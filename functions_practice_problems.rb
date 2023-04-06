@@ -179,6 +179,35 @@
 #====================================================================================#
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
+# def fiver(string)
+#   string * 5
+# end
+
+# puts fiver("satan ") # THIS PRINTS OUT ON ONE LINE WITH SPACES BETWEEN WORDS
+
+
+# def fiver(string)
+#   5.times {puts string}
+# end
+
+# fiver("satan") # THIS PRINTS OUT 5 SEPERATE LINES
+
+
+#-------------- OR THE FLeXIABLE WAY ---------##########
+
+
+# puts "Enter a word and I will make an echo of it: "
+# input_word = gets.chomp
+
+# def fiver(word)
+#   "#{word.upcase}! " * 5
+# end
+
+# puts fiver(input_word)
+
+
+
+
 #====================================================================================#
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
