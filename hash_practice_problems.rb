@@ -19,11 +19,12 @@
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
 # stooges = [
-#   {first_name: "Larry", last_name: "Fine", email: "larryfine@gmail.com" }, {first_name: "Moe", last_name: "Howard", email: "moehoward@gmail.com" },
-#   {first_name: "Curly", last_name: "Howard", email: "curlyhoward@gmail.com"}
+#   {first_name: "Larry", last_name: "Fine"}, {first_name: "Moe", last_name: "Howard"},
+#   {first_name: "Curly", last_name: "Howard"}
 # ]
 # puts 
-# pp stooges[0]
+# pp stooges[0][:first_name]
+# pp stooges[0][:last_name]
 
 
 
@@ -32,10 +33,10 @@
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-# items = { hamburger: 6.66, fries: 3.33, coke: 2.22}
+# menu = { hamburger: 6.66, fries: 3.33, coke: 2.22}
 
-# items[:hotdog] = 4.44
-# pp items
+# menu[:hotdog] = 4.44
+# pp menu
 
 
 
@@ -94,14 +95,14 @@
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-# states = {
+# capitals = {
 #   Illinois: "Springfield", 
 #   California: "Scacramento", 
 #   Arizona: "Phoneix"
 # }
-# states[:Colorado] = "Denver"
-# #pp states[:Arizona] ##---prints value of "Arizona" => "Phoenix"
-# pp states
+# capitals[:Colorado] = "Denver"
+# #pp capitals[:Arizona] ##---prints value of "Arizona" => "Phoenix"
+# pp capitals
 
 
 
@@ -144,24 +145,24 @@
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-# words = {
+# dictionary = {
 #   cat: "A four legged fuzzball", 
 #   dog: "Man's best friend"
 # }
 
-# words[:fish] = "A delicious dinner"
-# pp words
-
-
-
-
+# dictionary[:fish] = "A delicious dinner"
+# pp dictionary
 
 
 #===================================================================================================================####
 
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
+# shirt = {brand: "Burrberry", color: "Tan Nova check", size: "Medium"}
 
+# puts shirt[:brand]
+# puts shirt[:color]
+# puts shirt[:size]
 
 
 
