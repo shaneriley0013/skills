@@ -145,6 +145,37 @@
 #====================================================================================#
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
+# def num_to_string(number)
+#   number.to_s
+# end
+
+# p num_to_string(666)
+# p num_to_string(666).class
+
+
+
+#-------------- OR THE FLeXIABLE WAY WITH ANY INPUT AND QUOTES---------##########
+# puts 
+# puts 
+
+# puts "Give me a number and I will give you a string: "
+# input_number = gets.chomp
+# puts "================================"
+
+# def num_to_string(number)
+#   number.to_s
+# end 
+
+# puts
+
+# puts "Your number in string form will look like this : \"#{num_to_string(input_number)}\""
+# puts
+# puts "================================"
+
+# p "Your number in string form will look like this : '#{num_to_string(input_number)}' "
+
+
+
 #====================================================================================#
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
