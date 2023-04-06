@@ -115,6 +115,33 @@
 #====================================================================================#
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
+# def three_little_pigs(a, b, c)
+#   "#{a} #{b} #{c}"
+# end
+
+# puts three_little_pigs("straw", "wood", "brick")
+
+
+#-------------- OR THE FLeXIABLE WAY WITH ANY INPUT AND QUOTES---------##########
+# puts
+
+# puts "Enter 3 names:"
+# name1, name2, name3 = gets.split
+# def three_little_pigs(one, two, three)
+#   "#{one} #{two} #{three}"
+# end
+# puts
+# puts "================================"
+# puts
+
+# puts "The 3 little piggies names are \"#{name1}\", \"#{name2}\", and \"#{name3}\" "
+
+
+
+
+
+
+
 #====================================================================================#
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
