@@ -27,6 +27,24 @@
 
 # 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
 
+# def all_caps(word)
+#   word.upcase
+# end
+# puts all_caps("satan")
+
+#-------------- OR THE FLXIABLE WAY WITH ANY INPUT -------------------##########
+
+# puts "Enter a word: "
+# word = gets.chomp
+
+# def all_caps(word)
+#   word.upcase
+# end
+
+# puts "Here is your word in all caps: #{all_caps(word)}"
+
+
+
 #====================================================================================#
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
