@@ -70,9 +70,22 @@
 #====================================================================================#
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
+# def double(number)
+#   number *= number
+# end
+# p double(25.807)
 
 
+#-------------- OR THE FLXIABLE WAY WITH ANY INPUT -------------------##########
 
+# puts "Enter any number: "
+# number = gets.to_f #====> 25.807 to get 666!!
+
+# def double(number)
+#   number *= number
+# end
+
+# puts double(number)
 
 
 
