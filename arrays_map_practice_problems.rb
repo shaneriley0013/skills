@@ -22,18 +22,22 @@
 # numbers = [1, 2, 3]
 # big_numbers = []
 
-# numbers.each do |number|
-#   big_numbers << number * 3
-# end
+#-----------------------------------------#
+# # numbers.each do |number|         # THIS IS THE VERBOSE VERSION
+# #   big_numbers << number * 3      # don't use for just one line
+# # end                             # use only for more than one line                       
+#-----------------------------------------#
+
+# numbers.each {|number| big_numbers << number * 3}  #### USE THIS VERSION
+
 # p big_numbers
 
 
 #--------------- OR USING MAP DO --
 
+# puts 
 # numbers = [1, 2, 3]
-# new_numbers = numbers.map do |number|
-#   number * 3
-# end
+# new_numbers = numbers.map { |number| number * 3 }
 # p new_numbers
 
 
@@ -55,17 +59,8 @@
 
 #--------------- OR USING EACH DO --
 
-
 # array = [1, 2, 3]
 
-# array.each do |number|
-#   array[number] *= 3        # This DOES NOT WORK! WAITING TO FIND OUT WHY
-# end
-# p array
-
-# array = [1, 2, 3]
-
-#------------------ Example of "EACH DO" below works ------------
 
 # i = 0
 # array.each do
@@ -79,9 +74,10 @@
 
 # numbers = [1, 2, 3]
 
-# numbers = numbers.map do |number|
-#   number * 3
-# end
+# numbers = numbers.map { |number| number * 3 }
+## OR 
+#numbers.map! { |number| number * 3 }
+
 # p numbers
 
 
@@ -92,7 +88,7 @@
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
-#--------------- USING "While" WITH MAKING A NEW ARRAY--------------------------------
+#--------------- USING "While" with making a NEW ARRAY--------------------------------
 
 
 # stooges = ["Larry", "Moe", "Curly"]
@@ -153,6 +149,8 @@
 #--------------- OR USING EACH DO --
 
 
+
+
 # stooges = ["Larry", "Moe", "Curly"]
 
 # i = 0
@@ -163,7 +161,12 @@
 # p stooges
 
 
+
+
+
 #--------------- OR USING "MAP DO" --
+
+
 
 # stooges = ["Larry", "Moe", "Curly"]
 
@@ -178,7 +181,7 @@
 
 
 
-#================================================================#
+#================================ #3 ================================#
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
@@ -200,15 +203,50 @@
 
 # p stooges_names
 
+#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------
+
+
+# puts 
+# puts 
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
+
+# stooges_names = []
+# stooges.each do |hash|
+#   stooges_names << hash[:name]
+# end
+
+# p stooges_names
+
+
+
+#--------------- OR USING "MAP DO" --
+
+# puts 
+# puts 
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
+
+# stooges_names = []
+# # stooges_names = stooges.map do |hash|
+# #   hash[:name]
+# # end
+# #---------- OR ON ONE LINE "THE ELOQUENT WAY" --------------#
+# #stooges_names = stooges.map {|hash| hash[:name]}
+
+
+# p stooges_names
 
 
 
 
-
-
-
-
-#================================================================#
+#=================================== #4 ======================================#
 
 #  4. Start with an array of numbers and create a new array with each number plus 7.
 #     For example, [1, 2, 3] becomes [8, 9, 10].
