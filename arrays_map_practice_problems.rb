@@ -72,7 +72,7 @@
 
 #--------------- OR USING MAP DO --
 
-# numbers = [1, 2, 3]
+numbers = [1, 2, 3]
 
 # numbers = numbers.map { |number| number * 3 }
 ## OR 
@@ -122,9 +122,8 @@
 # stooges = ["Larry", "Moe", "Curly"]
 # caps_stooges = []
 
-# caps_stooges = stooges.map do |stooge|
-#   stooge.upcase
-# end
+# caps_stooges = stooges.map {|stooge| stooge.upcase }
+
 # p caps_stooges
 
 
@@ -149,8 +148,6 @@
 #--------------- OR USING EACH DO --
 
 
-
-
 # stooges = ["Larry", "Moe", "Curly"]
 
 # i = 0
@@ -162,19 +159,18 @@
 
 
 
-
-
 #--------------- OR USING "MAP DO" --
 
 
 
-# stooges = ["Larry", "Moe", "Curly"]
+#stooges = ["Larry", "Moe", "Curly"]
 
-# stooges = stooges.map do |stooge|
-#   stooge.upcase
-# end
+#stooges.map! { |stooge| stooge.upcase }
 
-# p stooges
+# ----------- OR ---------------------------
+
+#stooges = stooges.map { |stooge| stooge.upcase }
+#p stooges
 
 
 
