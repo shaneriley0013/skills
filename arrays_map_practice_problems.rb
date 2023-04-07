@@ -5,6 +5,8 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 
+#--------------- USING While --
+
 # numbers = [1, 2, 3]
 # big_numbers = []
 # i = 0
@@ -14,8 +16,33 @@
 # end
 # p big_numbers
 
-#--------------- OR Returning the same array with mulitplied numbers --
 
+#--------------- OR USING EACH DO --
+
+# numbers = [1, 2, 3]
+# big_numbers = []
+
+# numbers.each do |number|
+#   big_numbers << number * 3
+# end
+# p big_numbers
+
+
+#--------------- OR USING MAP DO --
+
+# numbers = [1, 2, 3]
+# new_numbers = numbers.map do |number|
+#   number * 3
+# end
+# p new_numbers
+
+
+
+
+#--------------- OR RETURNING THE SAME ARRAY WITH MULITPLIED NUMBERS --#########
+
+
+#----------- WHILE Example -----------------
 
 # array = [1, 2, 3]
 
@@ -26,13 +53,47 @@
 # end
 # p array
 
+#--------------- OR USING EACH DO --
+
+
+# array = [1, 2, 3]
+
+# array.each do |number|
+#   array[number] *= 3        # This DOES NOT WORK! WAITING TO FIND OUT WHY
+# end
+# p array
+
+# array = [1, 2, 3]
+
+#------------------ Example of "EACH DO" below works ------------
+
+# i = 0
+# array.each do
+#   array[i] *= 3
+#   i += 1
+# end
+# p array
+
+
+#--------------- OR USING MAP DO --
+
+# numbers = [1, 2, 3]
+
+# numbers = numbers.map do |number|
+#   number * 3
+# end
+# p numbers
 
 
 
-#================================================================#
+
+#============================== #2 ==================================#
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+#--------------- USING "While" WITH MAKING A NEW ARRAY--------------------------------
+
 
 # stooges = ["Larry", "Moe", "Curly"]
 # caps_stooges = []
@@ -46,7 +107,38 @@
 # p caps_stooges
 
 
-#--------------- OR Returning the same array with ALL CAPS --
+#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------
+
+
+# stooges = ["Larry", "Moe", "Curly"]
+# caps_stooges = []
+
+# i = 0
+# stooges.each do
+#   caps_stooges << stooges[i].upcase
+#   i += 1
+# end
+# p caps_stooges
+
+
+#--------------- OR USING "MAP DO" --
+
+# stooges = ["Larry", "Moe", "Curly"]
+# caps_stooges = []
+
+# caps_stooges = stooges.map do |stooge|
+#   stooge.upcase
+# end
+# p caps_stooges
+
+
+
+
+
+########### OR Returning the SAME ARRAY with ALL CAPS ###############
+
+
+#----------- WHILE Example -----------------
 
 
 # stooges = ["Larry", "Moe", "Curly"]
@@ -58,15 +150,55 @@
 # p stooges
 
 
+#--------------- OR USING EACH DO --
+
+
+# stooges = ["Larry", "Moe", "Curly"]
+
+# i = 0
+# stooges.each do |stooge|
+#   stooges[i] = stooge.upcase
+#   i += 1
+# end
+# p stooges
+
+
+#--------------- OR USING "MAP DO" --
+
+# stooges = ["Larry", "Moe", "Curly"]
+
+# stooges = stooges.map do |stooge|
+#   stooge.upcase
+# end
+
+# p stooges
+
+
+
+
+
 
 #================================================================#
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
+# puts 
+# puts 
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
 
+# stooges_names = []
+# i = 0
+# while i < stooges.length
+#   stooges_names << stooges[i][:name] + "!"
+#   i += 1
+# end
 
-
+# p stooges_names
 
 
 
