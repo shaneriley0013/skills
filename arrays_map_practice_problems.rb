@@ -5,14 +5,26 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 
-array = [1, 2, 3]
-
+numbers = [1, 2, 3]
+big_numbers = []
 i = 0
-while i < array.length
-  array[i] *= 3
+while i < numbers.length
+  big_numbers << numbers[i] * 3
   i += 1
 end
-p array
+p big_numbers
+
+#--------------- OR Returning the same array with mulitplied numbers --
+
+
+# array = [1, 2, 3]
+
+# i = 0
+# while i < array.length
+#   array[i] *= 3
+#   i += 1
+# end
+# p array
 
 
 
@@ -24,8 +36,28 @@ p array
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
+stooges = ["Larry", "Moe", "Curly"]
+caps_stooges = []
+i = 0
+while i < stooges.length
+  stooges[i] = stooges[i].upcase
+  i += 1
+end
+p stooges
 
 
+
+
+
+
+
+stooges = ["Larry", "Moe", "Curly"]
+i = 0
+while i < stooges.length
+  stooges[i] = stooges[i].upcase
+  i += 1
+end
+p stooges
 
 
 
