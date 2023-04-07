@@ -5,14 +5,14 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 
-numbers = [1, 2, 3]
-big_numbers = []
-i = 0
-while i < numbers.length
-  big_numbers << numbers[i] * 3
-  i += 1
-end
-p big_numbers
+# numbers = [1, 2, 3]
+# big_numbers = []
+# i = 0
+# while i < numbers.length
+#   big_numbers << numbers[i] * 3
+#   i += 1
+# end
+# p big_numbers
 
 #--------------- OR Returning the same array with mulitplied numbers --
 
@@ -29,41 +29,33 @@ p big_numbers
 
 
 
-
-
 #================================================================#
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
-stooges = ["Larry", "Moe", "Curly"]
-caps_stooges = []
-i = 0
-while i < stooges.length
-  stooges[i] = stooges[i].upcase
-  i += 1
-end
-p stooges
+# stooges = ["Larry", "Moe", "Curly"]
+# caps_stooges = []
+
+# i = 0
+# while i < stooges.length
+#   caps_stooges << stooges[i].upcase
+#   i += 1
+# end
+
+# p caps_stooges
 
 
+#--------------- OR Returning the same array with ALL CAPS --
 
 
-
-
-
-stooges = ["Larry", "Moe", "Curly"]
-i = 0
-while i < stooges.length
-  stooges[i] = stooges[i].upcase
-  i += 1
-end
-p stooges
-
-
-
-
-
-
+# stooges = ["Larry", "Moe", "Curly"]
+# i = 0
+# while i < stooges.length
+#   stooges[i] = stooges[i].upcase
+#   i += 1
+# end
+# p stooges
 
 
 
