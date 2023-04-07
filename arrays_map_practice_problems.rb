@@ -5,9 +5,14 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 
+array = [1, 2, 3]
 
-
-
+i = 0
+while i < array.length
+  array[i] *= 3
+  i += 1
+end
+p array
 
 
 
