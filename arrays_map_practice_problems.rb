@@ -248,13 +248,87 @@ numbers = [1, 2, 3]
 #     For example, [1, 2, 3] becomes [8, 9, 10].
 
 
+#----------WHILE EXAMPLE W/ <<NEW ARRAY>> ----------------------#
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# plus_seven = []
+# i = 0
+# while i < numbers.size
+#   plus_seven << ( numbers[i] + 7 )
+#   i += 1
+# end
+# p plus_seven
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# i = 0
+# while i < numbers.size
+#   numbers[i] += 7
+#   i += 1
+# end
+
+# p numbers
 
 
 
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# plus_seven = []
+
+# numbers.each { |number| plus_seven << number + 7}
+
+# p plus_seven
 
 
 
+#-------------- OR LIKE THIS FOR MORE LINES --------------------------------
 
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# plus_seven = []
+
+# numbers.each do |number|
+#   plus_seven << number + 7
+    ##EXTRA LINES GO IN HERE
+    ##EXTRA LINES GO IN HERE
+# end
+
+# p plus_seven
+
+
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# plus_seven = []
+
+# plus_seven = numbers.map { |number| number + 7}
+
+# p plus_seven
+
+
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# numbers.map! { |number| number + 7 }
+
+# p numbers
+
+
+#--------------- OR WRITTEN W/O "!" FOR <<SAME ARRAY>> --------------------------------##
+
+# numbers = [-673, -7, 659, -7, -673]
+
+# numbers = numbers.map { |number| number + 7 }
+
+# p numbers
 
 
 
