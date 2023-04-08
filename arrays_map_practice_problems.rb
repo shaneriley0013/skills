@@ -339,16 +339,87 @@ numbers = [1, 2, 3]
 #     For example, ["hello", "goodbye"] becomes [5, 7].
 
 
+#----------WHILE EXAMPLE W/ <<NEW ARRAY>> ----------------------#
+
+
+# puts 
+# puts 
+# stooges = [ "Larry", "Moe", "Curly" ]
+
+# stooge_lenght = []
+
+# i = 0
+# while i < stooges.size  ### SIZE AND LENGTH ARE THE SAME METHODS ###
+#   stooge_lenght << stooges[i].length
+#   i += 1
+# end
+
+# p stooge_lenght
+
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+# puts 
+# puts 
+# stooges = [ "Larry", "Moe", "Curly" ]
 
 
 
+# i = 0
+# while i < stooges.size  ### SIZE AND LENGTH ARE THE SAME METHODS ###
+#   stooges[i] = stooges[i].length
+#   i += 1
+# end
+
+# p stooges
 
 
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# puts 
+# puts 
+# stooges = [ "Larry", "Moe", "Curly" ]
+
+# stooge_lenght = []
+
+# stooges.each { |stooge| stooge_lenght << stooge.size}
+
+# p stooge_lenght
 
 
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# puts 
+# puts 
+# stooges = [ "Larry", "Moe", "Curly" ]
+
+# stooge_lenght = stooges.map { |stooge| stooge.size }
+
+# p stooge_lenght
 
 
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
 
+# puts 
+# puts 
+
+# stooges = [ "Larry", "Moe", "Curly" ]
+
+# stooges.map! { |stooge| stooge.size }
+
+# p stooges
+
+
+#--------------- OR WRITTEN W/O "!" FOR <<SAME ARRAY>> --------------------------------##
+
+# puts 
+# puts 
+
+# stooges = [ "Larry", "Moe", "Curly" ]
+
+# stooges = stooges.map { |stooge| stooge.size }
+
+# p stooges
 
 
 
