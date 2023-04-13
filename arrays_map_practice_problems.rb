@@ -520,16 +520,85 @@
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
 
+# numbers = [ 1332, -1332, 333, 666 ]
+# half_numbers = []
+
+# i = 0
+# while i < numbers.size
+#   half_numbers << (numbers[i].to_f / 2)
+#   i += 1
+# end
+
+# p half_numbers
+
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+# puts 
+# puts 
+
+# numbers = [ 1332, -1332, 333, 666 ]
+
+
+# i = 0
+# while i < numbers.size
+#   numbers[i] /= 2
+#   i += 1
+# end
+
+# p numbers
+
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# puts 
+# puts
+
+# numbers = [ 1332, -1332, 333, 666 ]
+# half_numbers = []
+
+# numbers.each { |number| half_numbers << ( number / 2) }
+# p half_numbers
 
 
 
 
 
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# puts 
+# puts 
+
+# numbers = [ 1332, -1332, 333, 666 ]
+# half_numbers = []
+
+# half_numbers = numbers.map { |number| (number / 2) }
+# p half_numbers
 
 
 
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
+
+# puts 
+# puts 
+
+# numbers = [ 1332, -1332, 333, 666 ]
+
+# numbers.map! { |number| (number / 2) }
+# p numbers
 
 
+
+#------------ MAP EXAMPLE W/O "!" FOR <<SAME ARRAY>> ----------------------##
+
+
+# puts 
+# puts
+
+# numbers = [ 1332, -1332, 333, 666 ]
+
+# numbers = numbers.map { |number| (number / 2) }
+
+# p numbers
 
 
 
