@@ -72,7 +72,7 @@
 
 #--------------- OR USING MAP DO --
 
-numbers = [1, 2, 3]
+#numbers = [1, 2, 3]
 
 # numbers = numbers.map { |number| number * 3 }
 ## OR 
@@ -346,15 +346,15 @@ numbers = [1, 2, 3]
 # puts 
 # stooges = [ "Larry", "Moe", "Curly" ]
 
-# stooge_lenght = []
+# stooge_length = []
 
 # i = 0
 # while i < stooges.size  ### SIZE AND LENGTH ARE THE SAME METHODS ###
-#   stooge_lenght << stooges[i].length
+#   stooge_length << stooges[i].length
 #   i += 1
 # end
 
-# p stooge_lenght
+# p stooge_length
 
 
 #------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
@@ -380,11 +380,11 @@ numbers = [1, 2, 3]
 # puts 
 # stooges = [ "Larry", "Moe", "Curly" ]
 
-# stooge_lenght = []
+# stooge_length = []
 
-# stooges.each { |stooge| stooge_lenght << stooge.size}
+# stooges.each { |stooge| stooge_length << stooge.size}
 
-# p stooge_lenght
+# p stooge_length
 
 
 #------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
@@ -429,18 +429,86 @@ numbers = [1, 2, 3]
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
 
+# puts 
+
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets_age = []
+
+# i = 0
+# while i < pruppets.size
+#   pruppets_age << pruppets[i][:age]
+#   i += 1
+# end
+
+# p pruppets_age
+
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+# puts 
+
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+
+# i = 0
+# while i < pruppets.size
+#   pruppets[i] = pruppets[i][:age]
+#   i += 1
+# end
+
+# p pruppets
+
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# puts 
+# puts 
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+# pruppets_age = []
+
+# pruppets.each do  |pruppet|
+#   pruppets_age << pruppet[:age]
+# end
+# p pruppets_age
+
+
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# puts 
+# puts 
+
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+# pruppets_age = pruppets.map {|pruppet| pruppet[:age]}
+
+# p pruppets_age
 
 
 
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
+
+# puts 
+# puts 
+
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+
+# pruppets.map! {|pruppet| pruppet[:age]}
+
+# p pruppets
 
 
 
+#------------ MAP EXAMPLE W/O "!" FOR <<SAME ARRAY>> ----------------------##
 
 
+# puts 
+# puts 
 
+# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 
+# pruppets = pruppets.map {|pruppet| pruppet[:age]}
 
-
+# p pruppets
 
 
 
