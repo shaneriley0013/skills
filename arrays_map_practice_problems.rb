@@ -5,7 +5,7 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 
-#--------------- USING While --
+#--------------- USING While -----------------#
 
 # numbers = [1, 2, 3]
 # big_numbers = []
@@ -17,7 +17,7 @@
 # p big_numbers
 
 
-#--------------- OR USING EACH DO --
+#--------------- USING EACH DO -------------------#
 
 # numbers = [1, 2, 3]
 # big_numbers = []
@@ -33,7 +33,7 @@
 # p big_numbers
 
 
-#--------------- OR USING MAP DO --
+#--------------- OR USING MAP DO -------------------#
 
 # puts 
 # numbers = [1, 2, 3]
@@ -46,7 +46,7 @@
 #--------------- OR RETURNING THE SAME ARRAY WITH MULITPLIED NUMBERS --#########
 
 
-#----------- WHILE Example -----------------
+#----------- WHILE Example ----------------------------------#
 
 # array = [1, 2, 3]
 
@@ -57,7 +57,7 @@
 # end
 # p array
 
-#--------------- OR USING EACH DO --
+#--------------- OR USING EACH DO ----------------------------#
 
 # array = [1, 2, 3]
 
@@ -70,7 +70,7 @@
 # p array
 
 
-#--------------- OR USING MAP DO --
+#--------------- OR USING MAP DO --------------------------#
 
 #numbers = [1, 2, 3]
 
@@ -83,12 +83,12 @@
 
 
 
-#============================== #2 ==================================#
+#============================================= #2 ====================================================================#
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
-#--------------- USING "While" with making a NEW ARRAY--------------------------------
+#--------------- USING "While" with making a NEW ARRAY--------------------------------#
 
 
 # stooges = ["Larry", "Moe", "Curly"]
