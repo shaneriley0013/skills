@@ -606,17 +606,91 @@
 
 #================================================================#
 
+
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
 
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+# stooges_first = []
+
+# i = 0
+# while i < stooges_names.size
+#   stooges_first << stooges_names[i][0]
+#   i += 1
+# end
+# p stooges_first
+
+
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+
+
+# i = 0
+# while i < stooges_names.size
+#   stooges_names[i] = stooges_names[i][0]
+#   i += 1
+# end
+# p stooges_names
+
+
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# puts 
+# puts
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+# stooges_first = []
+
+# stooges_names.each { |stooge| stooges_first << stooge[0] }
+# p stooges_first
 
 
 
 
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# puts 
+# puts 
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+# stooges_first = []
+
+# stooges_first = stooges_names.map { |stooge| stooge[0] }
+
+# p stooges_first
 
 
 
 
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
+
+# puts 
+# puts 
+
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+
+# stooges_names.map! { |stooge| stooge[0] }
+
+# p stooges_names
+
+
+
+#------------ MAP EXAMPLE W/O "!" FOR <<SAME ARRAY>> ----------------------##
+
+
+# puts 
+# puts
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+
+# stooges_names = stooges_names.map { |stooge| stooge[0] }
+
+# p stooges_names
 
 
 
@@ -628,6 +702,60 @@
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
 
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+
+
+# i = 0
+# while i < stooges_names.size
+#   stooges_names[i] = stooges_names[i][0]
+#   i += 1
+# end
+# p stooges_names
+
+
+#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+
+# puts 
+# puts
+
+# stooges_names = [ "Larry", "Moe", "Curly" ]
+# stooges_first = []
+
+# stooges_names.each { |stooge| stooges_first << stooge[0] }
+# p stooges_first
+
+
+
+
+
+
+#------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
+
+# puts 
+# puts 
+
+
+
+
+
+#------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
+
+# puts 
+# puts 
+
+
+
+
+
+#------------ MAP EXAMPLE W/O "!" FOR <<SAME ARRAY>> ----------------------##
+
+
+# puts 
+# puts
 
 
 
