@@ -1,89 +1,95 @@
 
 
 
-#============================================= #1 ====================================================================#
+#============================================= #1 ===============================================#
 
 #  1. Start with an array of numbers and create a new array with only the numbers less than 20.
 #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
 
-
-
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
+# numbers = [2, 32, 80, 18, 12, 3]
+# filtered_numbers = []
 
 # i = 0
-# while i < array.length
-#   array[i] *= 3
+# while i < numbers.length
+#   if numbers[i] < 20
+#     filtered_numbers << numbers[i]
+#   end
 #   i += 1
 # end
-# p array
+# p filtered_numbers
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
+# numbers = [2, 32, 80, 18, 12, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
+# i = 0                     
+# while i < numbers.size    
+#   if numbers[i] > 20      
+#     numbers.delete_at(i)
+#     i -= 1
+#   end
 #   i += 1
 # end
-# p array
+# p numbers
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
+# numbers = [2, 32, 80, 18, 12, 3]
+# filtered_numbers = []
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
+# numbers.each do |number|
+#   if number < 20
+#     filtered_numbers << number
+#   end
 # end
-# p array
+
+# p filtered_numbers
+
+#--------------- USING DELETE_IF <<SAME ARRAY>> --------------------# <<<< NEW METHOD!!! <<<< (delete_if)
+
+# numbers = [2, 32, 80, 18, 12, 3]
 
 
-#--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
+# numbers.delete_if { |number| number > 20 }
 
-# array = [1, 2, 3]
-
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
-
+# p numbers
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
+# numbers = [2, 32, 80, 18, 12, 3]
+# filtered_numbers = []
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
+# filtered_numbers = numbers.select { |number| number < 20 }
 
-# p numbers
+# p filtered_numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
+# numbers = [2, 32, 80, 18, 12, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
+# numbers = numbers.select { |number| number < 20}
+
+
+# p numbers
+
+#--------------- USING SELECT! <<SAME ARRAY>> --------------------------#
+
+
+# numbers = [2, 32, 80, 18, 12, 3]
+
+# numbers.select! { |number| number < 20}
+
 
 # p numbers
 
 
-
-
-#============================================= #2 ====================================================================#
+#============================================= #2 ===================================================#
 
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
@@ -91,78 +97,36 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
-
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
-#--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
-
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
+#--------------- USING SELECT! <<SAME ARRAY>> --------------------------#
 
 
 
-#============================================= #3 ====================================================================#
+
+
+#============================================= #3 ======================================================#
 
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
@@ -170,74 +134,30 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
-
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
-
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -252,74 +172,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -333,74 +211,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -412,74 +248,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -494,74 +288,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -574,74 +326,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -657,74 +367,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
@@ -740,74 +408,32 @@
 
 #----------- WHILE Example <<NEW ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #----------- WHILE Example <<SAME ARRAY>> ----------------------------------#
 
-# array = [1, 2, 3]
 
-# i = 0
-# while i < array.length
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 #--------------- USING EACH DO <<NEW ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING EACH DO <<SAME ARRAY>> ----------------------------#
 
-# array = [1, 2, 3]
 
-
-# i = 0
-# array.each do
-#   array[i] *= 3
-#   i += 1
-# end
-# p array
 
 
 #--------------- USING SELECT <<NEW ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
 #--------------- USING SELECT <<SAME ARRAY>> --------------------------#
 
-#numbers = [1, 2, 3]
 
-# numbers = numbers.map { |number| number * 3 }
-## OR 
-#numbers.map! { |number| number * 3 }
-
-# p numbers
 
 
 
