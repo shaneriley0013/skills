@@ -103,7 +103,32 @@
 # p caps_stooges
 
 
-#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------
+#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------#
+
+
+# stooges = ["Larry", "Moe", "Curly"]
+# caps_stooges = []
+
+# stooges.each { |stooge| caps_stooges << stooge.upcase}
+
+# p caps_stooges
+
+#--------------------OR WITH EACH DO--------------------------------#
+
+
+# stooges = ["Larry", "Moe", "Curly"]
+# caps_stooges = []
+
+# stooges.each do |stooge| 
+#   caps_stooges << stooge.upcase
+# end
+
+# p caps_stooges
+
+
+#-----------OR WITH EACH DO WITHOUT VARIABLE for whaterver reason-----------------#
+
+
 
 
 # stooges = ["Larry", "Moe", "Curly"]
@@ -117,7 +142,7 @@
 # p caps_stooges
 
 
-#--------------- OR USING "MAP DO" --
+####--------------- OR USING "MAP " -----------------------------------###
 
 # stooges = ["Larry", "Moe", "Curly"]
 # caps_stooges = []
@@ -130,10 +155,10 @@
 
 
 
-########### OR Returning the SAME ARRAY with ALL CAPS ###############
+#--------########### OR Returning the <<SAME ARRAY>>  ############### --------#
 
 
-#----------- WHILE Example -----------------
+#----------- WHILE Example -----------------#
 
 
 # stooges = ["Larry", "Moe", "Curly"]
@@ -145,7 +170,7 @@
 # p stooges
 
 
-#--------------- OR USING EACH DO --
+#--------------- OR USING EACH DO ---------------------#
 
 
 # stooges = ["Larry", "Moe", "Curly"]
@@ -159,7 +184,7 @@
 
 
 
-#--------------- OR USING "MAP DO" --
+#--------------- OR USING "MAP DO" -----------------------------##
 
 
 
@@ -167,7 +192,8 @@
 
 #stooges.map! { |stooge| stooge.upcase }
 
-# ----------- OR ---------------------------
+
+# ----------- OR -------------------------##
 
 #stooges = stooges.map { |stooge| stooge.upcase }
 #p stooges
@@ -180,7 +206,9 @@
 #================================ #3 ================================#
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
-#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+#     For example, [{name: "Alice", age: 666}, {name: "Blane", age: -666}] becomes ["Alice", "Blane"].
+
+
 
 # puts 
 # puts 
@@ -199,7 +227,29 @@
 
 # p stooges_names
 
-#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------
+
+#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+# puts 
+# puts 
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
+
+# i = 0
+# while i < stooges.size
+#   stooges[i] = stooges[i][:name] + "!"
+#   i += 1
+# end
+
+# p stooges
+
+
+
+
+#--------------- USING "EACH DO" WITH NEW ARRAY----------------------------#
 
 
 # puts 
@@ -211,15 +261,16 @@
 # ]
 
 # stooges_names = []
-# stooges.each do |hash|
-#   stooges_names << hash[:name]
+# stooges.each do |stooge|
+#   stooges_names << stooge[:name] + "!"
 # end
 
 # p stooges_names
 
 
 
-#--------------- OR USING "MAP DO" --
+#--------------- USING "EACH DO" WITH <<SAME ARRAY>>----------------------------#
+
 
 # puts 
 # puts 
@@ -229,17 +280,65 @@
 #   {name: "Curly", age:666}
 # ]
 
+# i = 0
+# stooges.each do |stooge|
+#   stooges[i] = stooge[:name] + "!"
+#   i += 1
+# end
+
+# p stooges
+
+
+
+#--------------- USING "MAP DO" WITH <<NEW ARRAY>> ------------##
+
+# puts 
+# puts 
+# stooges = [ 
+  #   {name: "Larry", age: 33}, 
+  #   {name: "Moe", age: 66}, 
+  #   {name: "Curly", age:666}
+  # ]
+  
 # stooges_names = []
-# # stooges_names = stooges.map do |hash|
-# #   hash[:name]
-# # end
-# #---------- OR ON ONE LINE "THE ELOQUENT WAY" --------------#
-# #stooges_names = stooges.map {|hash| hash[:name]}
+
+# stooges_names = stooges.map do |stooge|
+#   stooge[:name]
+# end
+  
+  
+  ##---------- ON ONE LINE "THE ELOQUENT WAY" --------------#
+  
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
+
+# stooges_names = []
+
+
+#stooges_names = stooges.map {|stooge| stooge[:name]}
 
 
 # p stooges_names
 
+#--------------- USING "MAP DO" WITH <<SAME ARRAY>> ------------##
 
+# puts
+# puts
+
+
+# stooges = [ 
+#   {name: "Larry", age: 33}, 
+#   {name: "Moe", age: 66}, 
+#   {name: "Curly", age:666}
+# ]
+
+
+# stooges = stooges.map { |stooge| stooge[:name] + "!" }
+
+# p stooges
 
 
 #=================================== #4 ======================================#
@@ -393,9 +492,9 @@
 # puts 
 # stooges = [ "Larry", "Moe", "Curly" ]
 
-# stooge_lenght = stooges.map { |stooge| stooge.size }
+# stooge_length = stooges.map { |stooge| stooge.size }
 
-# p stooge_lenght
+# p stooge_length
 
 
 #------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
@@ -426,12 +525,15 @@
 #================================================================#
 
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
-#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+#     For example, [{name: "Alice", age: 666}, {name: "Blane", age: -666}] becomes [666, -666].
+
+
+#------------ WHILE EXAMPLE FOR <<NEW ARRAY>> ----------------------#
 
 
 # puts 
 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 # pruppets_age = []
 
 # i = 0
@@ -447,7 +549,7 @@
 
 # puts 
 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 
 
 # i = 0
@@ -462,7 +564,7 @@
 
 # puts 
 # puts 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 
 # pruppets_age = []
 
@@ -472,12 +574,27 @@
 # p pruppets_age
 
 
+#---------------- EACH DO EXAMPLE << SAME ARRAY >>--------------------###
+
+# puts 
+# puts 
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
+
+# i = 0
+# pruppets.each do |pruppet|
+#   pruppets[i] = pruppet[:age]
+#   i += 1
+# end
+
+# p pruppets
+
+
 #------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
 
 # puts 
 # puts 
 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 
 # pruppets_age = pruppets.map {|pruppet| pruppet[:age]}
 
@@ -490,7 +607,7 @@
 # puts 
 # puts 
 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 
 # pruppets.map! {|pruppet| pruppet[:age]}
 
@@ -504,7 +621,7 @@
 # puts 
 # puts 
 
-# pruppets = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# pruppets = [{name: "Alice", age: 666}, {name: "Blane", age: -666}]
 
 # pruppets = pruppets.map {|pruppet| pruppet[:age]}
 
@@ -520,12 +637,15 @@
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
 
+#------------ WHILE EXAMPLE FOR <<NEW ARRAY>> ----------------------#
+
+
 # numbers = [ 1332, -1332, 333, 666 ]
 # half_numbers = []
 
 # i = 0
 # while i < numbers.size
-#   half_numbers << (numbers[i].to_f / 2)
+#   half_numbers << (numbers[i].to_f / 2)  #--OR =>> (numbers[i] / 2.0)
 #   i += 1
 # end
 
@@ -542,13 +662,13 @@
 
 # i = 0
 # while i < numbers.size
-#   numbers[i] /= 2
+#   numbers[i] /= 2.0
 #   i += 1
 # end
 
 # p numbers
 
-#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+#---------------- EACH DO EXAMPLE <<NEW ARRAY>>--------------------###
 
 # puts 
 # puts
@@ -556,10 +676,23 @@
 # numbers = [ 1332, -1332, 333, 666 ]
 # half_numbers = []
 
-# numbers.each { |number| half_numbers << ( number / 2) }
+# numbers.each { |number| half_numbers << ( number / 2.0) }
 # p half_numbers
 
 
+#---------------- EACH DO EXAMPLE <<SAME ARRAY>>--------------------###
+
+# puts 
+# puts
+
+# numbers = [ 1332, -1332, 333, 666 ]
+
+# i = 0
+# numbers.each do |number| 
+#   numbers[i] = (number / 2.0)
+#   i += 1
+# end
+# p numbers
 
 
 
@@ -571,7 +704,7 @@
 # numbers = [ 1332, -1332, 333, 666 ]
 # half_numbers = []
 
-# half_numbers = numbers.map { |number| (number / 2) }
+# half_numbers = numbers.map { |number| (number / 2.0) }
 # p half_numbers
 
 
@@ -583,7 +716,7 @@
 
 # numbers = [ 1332, -1332, 333, 666 ]
 
-# numbers.map! { |number| (number / 2) }
+# numbers.map! { |number| (number / 2.0) }
 # p numbers
 
 
@@ -699,7 +832,7 @@
 #================================================================#
 
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
-#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+#     For example, [{name: "Alice", age: 666}, {name: "Blane", age: -666}] becomes [54, 32].
 
 
 #------------ WHILE EXAMPLE FOR <<NEW ARRAY>> ----------------------#
@@ -716,7 +849,7 @@
 
 # i = 0
 # while i < stooges.length
-#   stooges_age_x2 << ( stooges[i][:age] * 2 )  
+#   stooges_age_x2 << (stooges[i][:age] * 2)  
 #   i += 1
 # end
 
@@ -743,7 +876,7 @@
   # p stooges
   
   
-  #---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
+  #---------------- EACH DO EXAMPLE <<NEW ARRAY>>--------------------###
   
   
 # puts 
@@ -753,13 +886,32 @@
 #   { name: "Larry", age: 333}, 
 #   { name: "Moe", age: -333 } 
 # ]
-  
+
 # stooges_age_x2 = []
 
 # stooges.each { |stooge| stooges_age_x2 << (stooge[:age] * 2) }
 
 # p stooges_age_x2  
 
+
+
+#---------------- EACH DO EXAMPLE <<SAME ARRAY>>--------------------###
+
+
+# puts 
+# puts
+
+# stooges = [ 
+#   { name: "Larry", age: 333}, 
+#   { name: "Moe", age: -333 } 
+# ]
+
+# i = 0
+# stooges.each do |stooge| 
+#   stooges[i] = (stooge[:age] * 2)
+#   i += 1
+# end
+# p stooges  
 
 
 
@@ -817,41 +969,109 @@
 
 #================================================================#
 
+
+
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
 
+# puts
+# puts
+
+
+# numbers = [-666, 13, 666]
+
+# string_numbers = []
+
+# i = 0
+# while i < numbers.size
+#   string_numbers << numbers[i].to_s
+#   i += 1
+# end
+# p string_numbers
 
 
 
-#------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+# #------------ WHILE EXAMPLE FOR <<SAME ARRAY>> ----------------------#
+
+
+# puts
+# puts
+
+
+# numbers = [-666, 13, 666]
+
+# i = 0
+# while i < numbers.size
+#   numbers[i] = numbers[i].to_s
+#   i += 1
+# end
+# p numbers
 
 
 
+#---------------- EACH DO EXAMPLE <<NEW ARRAY>>--------------------###
 
 
-
-#---------------- EACH DO EXAMPLE << NEW ARRAY >>--------------------###
-
-
+# puts
+# puts
 
 
+# numbers = [-666, 13, 666]
 
+# string_numbers = []
+
+# numbers.each { |number| string_numbers << number.to_s }
+
+# p string_numbers
+
+
+#---------------- EACH DO EXAMPLE <<SAME ARRAY>>--------------------###
+
+
+# puts
+# puts
+
+
+# numbers = [-666, 13, 666]
+
+
+# i = 0
+# numbers.each do |number| 
+#   numbers[i] = number.to_s
+#   i += 1
+# end
+
+# p numbers
 
 
 
 #------------------------ MAP EXAMPLE WITH <<NEW ARRAY>> --------------------###
 
-# puts 
-# puts 
+# puts
+# puts
 
 
+# numbers = [-666, 13, 666]
+
+# string_numbers = []
+
+# string_numbers = numbers.map { |number| number.to_s }
+
+# p string_numbers
 
 
 
 #------------ MAP EXAMPLE W/ "!" FOR <<SAME ARRAY>> ----------------------##
 
-# puts 
-# puts 
+# puts
+# puts
+
+
+# numbers = [-666, 13, 666]
+
+# numbers.map! { |number| number.to_s }
+
+# p numbers
 
 
 
@@ -864,25 +1084,11 @@
 # puts
 
 
+# numbers = [-666, 13, 666]
 
+# numbers = numbers.map { |number| number.to_s }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# p numbers
 
 
 
@@ -891,4 +1097,4 @@
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/b9ac4390aad2301a2238efc95c904f3d
 # SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/66598fd7cdbc67fe663624e217cebbaf
-# SOLUTIONS (using .map shortcut): https://gist.github.com/peterxjang/23a8f8a51601e4288ba3a8aa6d1f1c98
+# SOLUTIONS (using .map shortcut): https://gist.github.com/peterxjang/23a8f8a5-66601e4288ba3a8aa6d1f1c98
